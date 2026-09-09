@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MiPortafolio</div>
+    <nav class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#about">Sobre</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>Soy <span class="highlight">Misael San Román</span></h1>
+      <p>Creador de experiencias digitales con HTML5, CSS3 y JavaScript</p>
+      <a href="#proyectos" class="btn">Ver Proyectos</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="Misael.png" alt="Foto de perfil - Misael" class="foto-perfil">
+      </div>
+      <div class="about-content">
+        <h2>Sobre Mí</h2>
+        <p>Desarrollador web apasionado por crear interfaces limpias y modernas. Experto en HTML5, CSS3 y JavaScript moderno. Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.</p>
+        <div class="tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+      <div class="section-header">
+        <h2>Proyectos Destacados</h2>
+        <p>Algunos de mis trabajos recientes</p>
+      </div>
+      <div class="proyectos-grid">
+        <article class "proyecto-card">
+          <div class="proyecto-img"><div class="placeholder">Proyecto 1</div></div>
+          <div class="proyecto-info">
+            <h3>Sitio Web Corporativo</h3>
+            <p>Diseño responsive con animaciones sutiles</p>
+          </div>
+        </article>
+        <article class="proyecto-card">
+          <div class="proyecto-img"><div class="placeholder">Proyecto 2</div></div>
+          <div class="proyecto-info">
+            <h3>Aplicación Web</h3>
+            <p>Interfaz interactiva con JavaScript</p>
+          </div>
+        </article>
+        <article class="proyecto-card">
+          <div class="proyecto-img"><div class="placeholder">Proyecto 3</div></div>
+          <div class="proyecto-info">
+            <h3>Portfolio Personal</h3>
+            <p>Diseño minimalista y oscuro</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-header">
+        <h2>Habilidades</h2>
+        <p>Tecnologías con las que trabajo</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <h3>HTML5</h3>
+          <div class="bar"><div class="progress" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <h3>CSS3</h3>
+          <div class="bar"><div class="progress" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <h3>JavaScript</h3>
+          <div class="bar"><div class="progress" style="width: 75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <h3>React</h3>
+          <div class="bar"><div class="progress" style="width: 60%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <p>Hablemos sobre tu próximo proyecto</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Tu email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo">MiPortafolio</div>
+      <p>2024 - Todos los derechos reservados</p>
+      <div class="social-links">
+        <a href="#" class="social-link"><span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8v8h8l-4.3-4.3L14 8l-4 4-4-4L2 8V4h16v4z"/></svg></span></a>
+        <a href="#" class="social-link"><span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c2.785 0 5.068 2.027 5.888 4.5l.25.67.67.25c.413.413.413 1.077 0 1.49l-.67.25c-1.26 1.26-3.21 2.238-5.333 2.69.288.118.556.178.855.178s.568-.06.855-.178c2.123-.452 4.073-1.41 5.333-2.69l.67-.25c.413-.413.413-1.077 0-1.49l-.25-.67-.67.25c-.413.413-1.077.413-1.49 0l-.67-.25c-1.26-1.26-2.238-2.238-2.69-5.333l-.25-.67c-.178-.413-.178-1.077 0-1.49l.25-.67c.413-.413 1.077-.413 1.49 0l.67.25c1.26 1.26 2.238 2.238 2.69 5.333l.67.25c.413.413.413 1.077 0 1.49l-.67.25c-1.26 1.26-2.238 2.238-2.69 5.333l-.25.67-.67-.25c-.413-.413-.413-1.077 0-1.49l.67-.25zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 1.333c-2.97 0-5.4 2.43-5.4 5.4s2.43 5.4 5.4 5.4 5.4-2.43 5.4-5.4S14.97 1.333 12 1.333z"/></svg></span></a>
+        <a href="#" class="social-link"><span class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 6.857l2.818-.852a1 1 0 011.148.611l.152 1.988a1 1 0 01-.54 1.285l-1.1 1.069a1 1 0 01-.946.59l-1.1-.85a1 1 0 11-.563-1.83l1.106-1.957a1 1 0 01.883.51h.057zM12 15.618l1.694 2.605a.75.75 0 01-.285.928l-2.755.738a.75.75 0 01-.663-.218l-2.744-.737a.75.75 0 01-.213-.662l.957-2.754a.75.75 0 01.526-.897zm0 2.645a3.35 3.35 0 100-6.7 3.35 3.35 0 000 6.7z"/></svg></span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
