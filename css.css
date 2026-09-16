@@ -1,0 +1,90 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+    background-color: #f7f3ee; /* Beige cálido */
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4a3f35; /* Marrón suave */
+}
+
+/* ======== HEADER ======== */
+header {
+    background-color: #f0e4d7; /* Beige más oscuro */
+    padding: 20px;
+    border-bottom: 2px solid #d8c3a5;
+}
+
+header h1 {
+    color: #b85c38; /* Naranja cálido */
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ======== NAVEGACIÓN ======== */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b85c38;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e8d4c3;
+}
+
+/* ======== SECCIONES ======== */
+section {
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #fffaf5;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ======== TITULOS ======== */
+h2 {
+    color: #b85c38;
+    margin-top: 0;
+}
+
+h3 {
+    color: #6f4e37;
+}
+
+/* ======== PÁRRAFOS ======== */
+p {
+    line-height: 1.6;
+    color: #4a3f35;
+}
+
+/* ======== ARTÍCULOS ======== */
+article {
+    background-color: #fdf7f2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #b85c38;
+    border-radius: 8px;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f0e4d7;
+    color: #6f4e37;
+    margin-top: 40px;
+}
+
