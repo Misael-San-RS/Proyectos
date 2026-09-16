@@ -1,0 +1,86 @@
+<section id="praxis-js02">
+    <h2>Avance Praxis JavaScript 02</h2>
+    <p><strong>Misael San Román Suárez</strong></p>
+
+    <h3>1. Manipulación del DOM</h3>
+    <p id="dom-texto">Texto original</p>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <h3>2. Eventos (clic y teclado)</h3>
+    <input type="text" id="entrada" placeholder="Escribe algo...">
+    <p id="resultado"></p>
+
+    <h3>3. Validación de formulario</h3>
+    <form onsubmit="return validarFormulario()">
+        <input type="email" id="correo" placeholder="Ingresa tu correo">
+        <button type="submit">Enviar</button>
+        <p id="error" style="color:red;"></p>
+    </form>
+
+    <h3>4. Consumo de API</h3>
+    <button onclick="obtenerDato()">Obtener dato</button>
+    <p id="api-dato"></p>
+
+    <h3>5. Animación</h3>
+    <div id="cuadro" style="
+        width:50px; height:50px; background:#b85c38;
+        position:relative; border-radius:8px;">
+    </div>
+    <button onclick="animar()">Mover cuadro</button>
+
+    <script>
+
+        function cambiarTexto() {
+            document.getElementById("dom-texto").textContent =
+                "Con fe para el parcial";
+        }
+
+
+        document.getElementById("entrada").addEventListener("keyup", function() {
+            document.getElementById("resultado").textContent =
+                "Escribiste: " + this.value;
+        });
+
+
+        function validarFormulario() {
+            const correo = document.getElementById("correo").value;
+            const error = document.getElementById("error");
+
+            if (correo === "") {
+                error.textContent = "El correo no puede estar vacío.";
+                return false;
+            }
+
+            if (!correo.includes("@")) {
+                error.textContent = "Debe contener un @.";
+                return false;
+            }
+
+            error.textContent = "";
+            alert("Formulario enviado correctamente");
+            return true;
+        }
+
+
+        async function obtenerDato() {
+            const respuesta = await fetch("https://api.chucknorris.io/jokes/random");
+            const data = await respuesta.json();
+            document.getElementById("api-dato").textContent = data.value;
+        }
+
+
+        function animar() {
+            const cuadro = document.getElementById("cuadro");
+            let posicion = 0;
+
+            const intervalo = setInterval(() => {
+                if (posicion >= 200) {
+                    clearInterval(intervalo);
+                } else {
+                    posicion++;
+                    cuadro.style.left = posicion + "px";
+                }
+            }, 10);
+        }
+    </script>
+</section>
