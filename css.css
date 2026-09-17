@@ -88,3 +88,24 @@ footer {
     margin-top: 40px;
 }
 
+.boton-inferior {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-js {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-js:hover {
+    background-color: #45a049;
+}
+
